@@ -1,73 +1,108 @@
-# Welcome to your Lovable project
+# Jokenpo - Jogo da Pedra, Papel e Tesoura
 
-## Project info
+Resumo
+---------
+Jokenpo é uma implementação do jogo Pedra, Papel e Tesoura (Jokenpo). Este repositório contém uma aplicação que permite jogar contra a máquina ou contra outro jogador localmente. O README descreve como configurar, executar, testar e contribuir para o projeto.
 
-**URL**: https://lovable.dev/projects/d3434b10-8b17-48a6-a9ae-d3e6b5bb6bae
+Funcionalidades
+---------
+- Jogar contra a IA (computador) ou modo multiplayer local.
+- Histórico de partidas e placar simples.
+- Interface responsiva (web) ou modo CLI (se suportado).
+- Sistema de pontuação e reinício de jogo.
 
-## How can I edit this code?
+Regras do jogo
+---------
+- Pedra vence Tesoura.
+- Tesoura vence Papel.
+- Papel vence Pedra.
+- Empate quando as escolhas são iguais.
 
-There are several ways of editing your application.
+Tecnologias (exemplos)
+---------
+A tecnologia real pode variar; ajuste conforme o que o projeto usa.
+- Frontend:  React Ts
+- Estilo : tailwind
+- Backend (opcional): Node.js/Express
+- Build: npm 
 
-**Use Lovable**
+Pré-requisitos
+---------
+- Node.js >= 14 (se a aplicação for em JavaScript)
+- npm
+- Navegador moderno (para interface web)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d3434b10-8b17-48a6-a9ae-d3e6b5bb6bae) and start prompting.
+Instalação
+---------
+1. Clone o repositório:
+    ```
+    git clone https://github.com/LaryssaGabi/Jokenpo-Jogo.git
+    cd Jokenpo-Jogo
+    ```
+2. Instale dependências:
+    ```
+    npm install
+    ```
 
-Changes made via Lovable will be committed automatically to this repo.
+Execução (desenvolvimento)
+---------
+- Executar em modo dev:
+  ```
+  npm run dev
 
-**Use your preferred IDE**
+Build (produção)
+---------
+- Gerar build otimizado:
+  ```
+  npm run build
+  ```
+  ou
+  ```
+  yarn build
+  ```
+- Servir a pasta `dist`/`build` com um servidor estático.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Uso
+---------
+- Escolha o modo: "Contra a máquina" ou "Multiplayer".
+- Selecione Pedra, Papel ou Tesoura.
+- Veja o resultado e o placar.
+- Reinicie o jogo a qualquer momento.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Estrutura sugerida de pastas
+---------
+- src/ — código fonte (frontend)
+- public/ — ativos estáticos
+- server/ — (opcional) backend
+- tests/ — testes automatizados
+- README.md — este arquivo
 
-Follow these steps:
+Scripts comuns (package.json)
+---------
+- npm run dev — iniciar ambiente de desenvolvimento
+- npm run build — compilar para produção
+- npm test — executar testes
+- npm run lint — checar estilo
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Boas práticas
+---------
+- Validar entradas do usuário.
+- Isolar lógica de regras do jogo em módulos testáveis.
+- Escrever testes unitários para a lógica de decisão (quem venceu).
+- Manter UI acessível e responsiva.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Testes
+---------
+Exemplo de teste para a função que decide o vencedor:
+- Entradas: escolha do jogador A e jogador B.
+- Saída esperada: 'A', 'B' ou 'Empate'.
 
-# Step 3: Install the necessary dependencies.
-npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Possíveis melhorias
+---------
+- Suporte a multiplayer online via WebSocket.
+- Estatísticas avançadas (percentual de vitórias, sequência de vitórias).
+- Animações e efeitos sonoros.
+- Modo torneio com múltiplos jogadores.
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d3434b10-8b17-48a6-a9ae-d3e6b5bb6bae) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
