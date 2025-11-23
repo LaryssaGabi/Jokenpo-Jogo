@@ -1,33 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokenpô - Pedra, Papel e Tesoura</title>
+    <meta name="description" content="Jogue Jokenpô (Pedra, Papel e Tesoura) online. Versão moderna e divertida do clássico jogo contra o computador." />
+    
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/estilo.css">
+    <link rel="icon" href="/favicon.ico" />
 
-    <title>Jokenpô</title>
-</head>
+    <meta property="og:title" content="Jokenpô - Pedra, Papel e Tesoura" />
+    <meta property="og:description" content="Jogue Jokenpô online! Versão moderna do clássico jogo Pedra, Papel e Tesoura." />
+  </head>
 
-<body>
-    <div class="container">
-        <h1>Jokenpô!</h1>
-
-        <div class="buttons">
-            <button id="pedra" onclick="playHuman('pedra')"> &#x1F44A</button>
-            <button id="papel" onclick="playHuman('papel')">&#x270B</button>
-            <button id="tesoura" onclick="playHuman('tesoura')">&#x270C</button>
-
-        </div>
-        <p class="resultado"></p>
-        <p class="pontuacao">Sua pontuação: <span id="pontuacao-human">0</span></p>
-        <p class="maquina">Pontuação do computador: <span id="pontuacao-computer">0</span></p>
-
-        <button id="zerar" onclick="zerarPontuacao()"><p class="zerarPont">Zerar Pontuação</p></button>
-
-    </div>
-</body>
-
-<script src="./src/js/action.js"></script>
-
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

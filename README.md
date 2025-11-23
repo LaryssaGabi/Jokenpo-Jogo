@@ -1,32 +1,73 @@
-# Jogo de Jokenpô
+# Welcome to your Lovable project
 
-Este projeto é uma implementação simples do famoso jogo Pedra, Papel e Tesoura utilizando HTML, CSS e JavaScript.
+## Project info
 
-## Tabela de Conteúdos
-- [Introdução](#introdução)
-- [Como Jogar](#como-jogar)
-- [Estrutura de Arquivos](#estrutura-de-arquivos)
+**URL**: https://lovable.dev/projects/d3434b10-8b17-48a6-a9ae-d3e6b5bb6bae
 
+## How can I edit this code?
 
-## Introdução
-Jokenpô, também conhecido como Pedra, Papel e Tesoura, é um jogo de mãos geralmente jogado entre duas pessoas. O jogo tem três resultados possíveis: empate, vitória ou derrota.
+There are several ways of editing your application.
 
-Este projeto fornece uma implementação baseada na web do jogo, onde o jogador compete contra um oponente computadorizado.
+**Use Lovable**
 
-## Como Jogar
-- Abra o arquivo `index.html` em seu navegador da web.
-- Clique em um dos três botões representando Pedra, Papel ou Tesoura para fazer sua escolha.
-- O computador selecionará aleatoriamente sua escolha.
-- O resultado da rodada será exibido na tela.
-- As pontuações do jogador e do computador serão atualizadas de acordo.
+Simply visit the [Lovable Project](https://lovable.dev/projects/d3434b10-8b17-48a6-a9ae-d3e6b5bb6bae) and start prompting.
 
-## Estrutura de Arquivos
-.
-├── index.html
-├── src
-│ ├── css
-│ │ └── estilo.css
-│ └── js
-│ └── action.js
-└── README.md
+Changes made via Lovable will be committed automatically to this repo.
 
+**Use your preferred IDE**
+
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
+
+**Edit a file directly in GitHub**
+
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
+
+**Use GitHub Codespaces**
+
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/d3434b10-8b17-48a6-a9ae-d3e6b5bb6bae) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
